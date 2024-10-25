@@ -13,11 +13,6 @@ const produkSchema = new mongoose.Schema({
     stok : {
         type : Number,
     },
-    kategori_id:{
-        type : mongoose.Schema.Types.Objectid,
-        ref : 'Kategori',
-        require :true,
-    }
 });
 
 const Produk = mongoose.model('produk',produkSchema);
